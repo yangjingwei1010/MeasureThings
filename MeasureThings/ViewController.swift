@@ -65,12 +65,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         }
 
         if let endNode = endNode {
-            // Reset
-            startNode?.removeFromParentNode()
-            self.startNode = nil
-            endNode.removeFromParentNode()
-            self.endNode = nil
-            distanceLabel.text = "Distance: ?"
+            
             return
         }
 
